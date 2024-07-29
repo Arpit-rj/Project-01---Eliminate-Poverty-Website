@@ -1,0 +1,254 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+    background-image: linear-gradient(to bottom, #f2f2f2, #fff);
+    background-attachment: fixed;
+    font-family: "Roboto Mono", monospace;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 5px solid #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #444;
+    padding: 0.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+}
+
+h1 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 110%;
+    height: 250px;
+    object-fit:contain;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(6, 6, 50);
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid purple;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    border-top: 5px solid #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    color: #ccc;
+    text-decoration:dotted;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Add some realistic effects */
+
+section {
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+}
+
+input[type="submit"] {
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+/* Add some colors */
+
+header {
+    background-color: #3498db;
+}
+
+nav ul {
+    background-color: #2ecc71;
+}
+
+main {
+    background-color: #f1c40f;
+}
+
+section {
+    background-color: #fff;
+}
+
+footer {
+    background-color: #e74c3c;
+}
+
+/* Add some fonts */
+
+h1, h2 {
+    font-family: "Roboto Mono", monospace;
+    color: purple;
+    text-decoration:dashed;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Add some responsive design */
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    section {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5em;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin-bottom: 10px;
+    }
+}
